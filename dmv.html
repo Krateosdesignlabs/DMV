@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Veteran-owned DMV service provider in Henderson, NV.">
+    <meta name="author" content="Krateos Design Labs">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>DMV Tag and Title</title>
+
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <style>
+      /* Integrated CSS from style.css */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        min-height: 100vh;
+        background-image: url('assets/images/background.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        color: #333;
+      }
+
+      header {
+        padding: 20px 0;
+      }
+
+      /* Card Grid Styling */
+      .about-page-section {
+        padding: 40px 20px;
+        background-color: rgba(240, 240, 240, 0.9); /* Slight transparency to show background */
+        border-radius: 15px;
+        margin: 20px auto;
+        max-width: 1200px;
+      }
+
+      .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+      }
+
+      .custom-card {
+        flex: 1;
+        min-width: 250px;
+        max-width: 350px;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.3s ease;
+      }
+
+      .custom-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .custom-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        display: block;
+      }
+
+      .card-body {
+        padding: 24px;
+        text-align: left;
+      }
+
+      .card-body h3 {
+        font-size: 1.5rem;
+        margin-bottom: 12px;
+        color: #333;
+      }
+
+      .card-body p {
+        color: #666;
+        line-height: 1.6;
+        font-size: 14px;
+      }
+
+      /* Footer Styling */
+      footer {
+        background-color: #1a1a1a;
+        color: #ffffff;
+        padding: 40px 20px;
+        text-align: left;
+      }
+
+      .footer-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 30px;
+      }
+
+      .footer-col {
+        flex: 1;
+        min-width: 200px;
+      }
+
+      .footer-col h3, .footer-col h4 {
+        color: #4da6ff;
+        margin-bottom: 15px;
+      }
+
+      .footer-col h4 {
+        border-bottom: 2px solid #4da6ff;
+        display: inline-block;
+        padding-bottom: 5px;
+      }
+
+      .footer-links {
+        list-style: none;
+        padding: 0;
+        font-size: 14px;
+        line-height: 2;
+      }
+
+      .footer-links a {
+        color: #ffffff;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+
+      .footer-links a:hover {
+        color: #4da6ff;
+      }
+
+      /* Modal Styling */
+      .modal {
+        display: none; 
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.6);
+        justify-content: center;
+        align-items: center;
+      }
+
+      .modal-content {
+        background-color: white;
+        padding: 30px;
+        width: 90%;
+        max-width: 500px;
+        border-radius: 12px;
+        position: relative;
+        text-align: center;
+      }
+
+      .close-btn {
+        position: absolute;
+        right: 15px;
+        top: 10px;
+        font-size: 28px;
+        cursor: pointer;
+        color: #999;
+      }
+
+      @media (max-width: 768px) {
+        .footer-container {
+          flex-direction: column;
+          text-align: center;
+        }
+        .footer-col h4 {
+            display: block;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+
+      <header>
+        <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
+          <a href="#">
+            <img src="assets/images/DMV.png" style="width: 200px; height: auto;" alt="DMV Logo">
+          </a>
+          <div class="text-center text-md-right mt-3 mt-md-0">
+            <h1 style="color: white; font-weight: bold;">Welcome to <span style="color: #0d6efd;">DMV</span> Tag and Title</h1>
+            <h5 style="color: white;">Your one stop shop for all your DMV needs</h5>
+          </div>
+        </div>
+      </header>
+
+      <div class="container">
+        <hr style="border-top: 1px solid rgba(255,255,255,0.5);">
+      </div>
+
+      <section class="about-page-section container">
+        <div class="card-container">
+
+          <div class="custom-card">
+            <img src="assets/images/title.jpeg" alt="Title Services">
+            <div class="card-body">
+              <h3>Title Services</h3>
+              <p>From title transfers and lien releases to duplicate title requests, we handle every detail of your vehicle documentation.</p>
+            </div>
+          </div>
+
+          <div class="custom-card">
+            <img src="assets/images/car01.jpg" alt="License Services">
+            <div class="card-body">
+              <h3>License Services</h3>
+              <p>License renewals and Real ID assistance, we provide comprehensive support for all your DMV documentation needs.</p>
+            </div>
+          </div>
+
+          <div class="custom-card">
+            <img src="assets/images/registration.jpg" alt="Registration Services">
+            <div class="card-body">
+              <h3>Registration Services</h3>
+              <p>New registrations and veteran tax exemptions, we handle all your DMV paperwork so you don't have to.</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer-container">
+          
+          <div class="footer-col">
+            <h3>DMV Tag and Title</h3>
+            <p style="font-size: 14px; line-height: 1.6; color: #cccccc;">
+              Expert document solutions. A veteran-owned business dedicated to simplifying your DMV experience in Henderson and beyond.
+            </p>
+          </div>
+
+          <div class="footer-col">
+            <h4>Our Services</h4>
+            <ul class="footer-links">
+              <li><a href="#">Title Transfers</a></li>
+              <li><a href="#">Registration & Renewals</a></li>
+              <li><a href="#">Lien Releases</a></li>
+              <li><a href="#">Duplicate Titles</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Connect</h4>
+            <p style="font-size: 14px; margin: 5px 0;"><strong>Phone:</strong> <a href="tel:+17023790006" style="color: white; text-decoration: none;">(702) 379-0006</a></p>
+            <p style="font-size: 14px; margin: 5px 0;"><strong>Email:</strong> <a href="mailto:ryan.reid@krateosdesignlabs.com" style="color: white; text-decoration: none;">ryan.reid@krateosdesignlabs.com</a></p>
+            <p style="font-size: 14px; margin: 5px 0;"><strong>Location:</strong> Henderson, NV</p>
+          </div>
+
+        </div>
+        <div style="text-align: center; margin-top: 30px; font-size: 12px; color: #777; border-top: 1px solid #333; padding-top: 20px;">
+            &copy; 2026 DMV Tag and Title. Veteran Owned & Operated.
+        </div>
+      </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    
+    <script>
+      const modal = document.getElementById("myModal");
+      function openModal() { if(modal) modal.style.display = "flex"; }
+      function closeModal() { if(modal) modal.style.display = "none"; }
+      window.onclick = function(event) {
+        if (event.target == modal) { closeModal(); }
+      }
+    </script>
+  </body>
+</html>
